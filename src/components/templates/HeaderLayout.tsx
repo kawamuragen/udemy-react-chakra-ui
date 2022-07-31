@@ -1,6 +1,6 @@
 import { memo, ReactNode, VFC } from "react";
 
-import { Header } from "../organisms/Layout/Header";
+import { Header } from "../organisms/layout/Header";
 
 // タグで囲ったものを受け取るときにReactNode使う
 type Props = {
