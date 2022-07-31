@@ -2,10 +2,10 @@ import { extendTheme } from "@chakra-ui/react";
 
 // https://chakra-ui.com/docs/styled-system/theme
 const theme = extendTheme({
-  style: {
+  styles: {
     global: {
       body: {
-        backgroudColor: "gray.100",
+        backgroundColor: "gray.100",
         color: "gray.800"
       }
     }
