@@ -8,6 +8,7 @@ export const Login: VFC = memo(() => {
   const { login, loading } = useAuth();
   // TypeScriptの型推論のおかけで
   // 初期値から判断できるときは型を記載しなくても良い時がある
+  // useState<String>(""); → useState("");
   const [userId, setUserId] = useState("");
 
   const onChangeUserId = (e: ChangeEvent<HTMLInputElement>) =>
@@ -21,6 +22,7 @@ export const Login: VFC = memo(() => {
         <Heading as="h1" size="lg" textAlign="center">
           ユーザー管理アプリ
         </Heading>
+        {/* divider 薄い線の margin-height: 4; */}
         <Divider my={4} />
         {/* 囲った中を等間隔で並べるためにStackが便利 */}
         <Stack spacing={6} py={4} px={10}>

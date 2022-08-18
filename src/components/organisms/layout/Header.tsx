@@ -7,6 +7,7 @@ import { MenuIconButton } from "../../atoms/button/MenuIconButton";
 import { MenuDrawer } from "../../molecules/MenuDrawer";
 
 export const Header: VFC = memo(() => {
+  // Drawer を開いてる、開く、閉じるの状態管理を用意してくれている
   const { isOpen, onOpen, onClose } = useDisclosure();
   const history = useHistory();
 

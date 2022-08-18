@@ -27,7 +27,7 @@ export const MenuDrawer: VFC<Props> = memo((props) => {
   // https://chakra-ui.com/docs/hooks/use-disclosure
   return (
     <Drawer placement="left" size="xs" onClose={onClose} isOpen={isOpen}>
-      {/* 開いたときに後ろをバックドロップでクリックする */}
+      {/* 開いたときに後ろをバックドロップで暗くする */}
       <DrawerOverlay>
         <DrawerContent>
           <DrawerBody p={0} bg="gray.100">
