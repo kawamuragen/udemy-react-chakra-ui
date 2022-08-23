@@ -12,6 +12,7 @@ import { UserCard } from "../organisms/user/UserCard";
 import { UserDetailModal } from "../organisms/user/UserDetailModal";
 import { useAllUsers } from "../../hooks/useAllUsers";
 import { useSelectUser } from "../../hooks/useSelectUser";
+import { useLoginUser } from "../../hooks/useLoginUser";
 
 // https://chakra-ui.com/docs/components/wrap/usage
 // Wrap 自動でレスポンシブ対応してくれる機能
@@ -20,6 +21,8 @@ export const UserManagement: VFC = memo(() => {
   const { getUsers, users, loading } = useAllUsers();
   const { onSelectUser, selectedUser } = useSelectUser();
   // console.log(selectedUser);
+  const { loginUser } = useLoginUser();
+  console.log(loginUser);
 
   // クリックされたらモーダルを開く
   const onClickUser = useCallback(
